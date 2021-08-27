@@ -16,15 +16,19 @@ import './App.css';
 // import './appStyles.css'
 // import styles from './appStyles.module.css'
 // import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
+// import LifecycleA from './components/LifecycleA';
+// import FragmentDemo from './components/FragmentDemo';
+// import Table from './components/Table';
+import PureComp from './components/PureComp';
 
 function App() {
   return (
     <div className="App">
-      
-<LifecycleA/>
-{/* <Form/> */}
-
+      <PureComp/>
+      {/* <FragmentDemo /> */}
+      {/* <Table/> */}
+      {/* <LifecycleA/> */}
+      {/* <Form/> */}
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1>
       <Stylesheets primary={true} />
