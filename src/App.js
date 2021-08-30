@@ -19,12 +19,39 @@ import './App.css';
 // import LifecycleA from './components/LifecycleA';
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
-import PureComp from './components/PureComp';
+// import ParenComp from './components/ParenComp';
+// import RefsDemo from './components/RefsDemo';
+// import PortalDemo from './components/PortalDemo';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import ComponentC from './components/ComponentC';
+// import {UserProvider} from './components/userContext'
+import PostList from './components/PostList';
+
 
 function App() {
   return (
     <div className="App">
-      <PureComp/>
+      <PostList/>
+      {/* <UserProvider value="Carolina"> */}
+      {/* <ComponentC/> */}
+      {/* </UserProvider> */}
+      {/* <ClickCounter name='Carolina'/>
+      <HoverCounter/> */}
+      {/* <ErrorBoundary>
+      <Hero heroName='Batman'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName='Superman'/>
+      </ErrorBoundary>
+      <ErrorBoundary>
+      <Hero heroName='Jocker'/>
+      </ErrorBoundary> */}
+      {/* <PortalDemo/> */}
+      {/* <RefsDemo/> */}
+      {/* <ParenComp/> */}
       {/* <FragmentDemo /> */}
       {/* <Table/> */}
       {/* <LifecycleA/> */}
