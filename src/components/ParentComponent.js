@@ -1,28 +1,58 @@
-import React, { Component } from 'react'
-import ChildComponent from './ChildComponent'
+// import React, { Component } from 'react'
+// import ChildComponent from './ChildComponent'
 
-class ParentComponent extends Component {
-    constructor(props) {
-        super(props)
+// class ParentComponent extends Component {
+//     constructor(props) {
+//         super(props)
     
-        this.state = {
-            parentName:'Parent'
+//         this.state = {
+//             parentName:'Parent'
              
-        }
-        this.greetParent = this.greetParent.bind(this)
-    }
+//         }
+//         this.greetParent = this.greetParent.bind(this)
+//     }
 
-    greetParent(childName){
-        alert(`Hello ${this.state.parentName} from ${childName}`)
-    }
+//     greetParent(childName){
+//         alert(`Hello ${this.state.parentName} from ${childName}`)
+//     }
     
-    render() {
-        return (
-            <div>
-                <ChildComponent greetHandler={this.greetParent}/>
-            </div>
-        )
-    }
+//     render() {
+//         return (
+//             <div>
+//                 <ChildComponent greetHandler={this.greetParent}/>
+//             </div>
+//         )
+//     }
+// }
+
+// export default ParentComponent
+
+import React, { useState, useCallback } from 'react'
+import Count from './Count'
+import Button from './Button'
+import Title from './Title'
+
+function ParentComponent() {
+	const [age, setAge] = useState(25)
+	const [salary, setSalary] = useState(50000)
+
+	const incrementAge = useCallback(() => {
+		setAge(age + 1)
+	}, [age])
+
+	const incrementSalary = useCallback(() => {
+		setSalary(salary + 1000)
+	}, [salary])
+
+	return (
+		<div>
+			<Title />
+			<Count text="Age" count={age} />
+			<Button handleClick={incrementAge}>Increment Age</Button>
+			<Count text="Salary" count={salary} />
+			<Button handleClick={incrementSalary}>Increment Salary</Button>
+		</div>
+	)
 }
 
 export default ParentComponent

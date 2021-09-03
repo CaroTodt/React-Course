@@ -1,5 +1,7 @@
 
 import './App.css';
+import ParentComponent from './components/ParentComponent'
+// import React, { useReducer } from 'react'
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -31,12 +33,60 @@ import './App.css';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm';
 // import HookCounterFour from './components/HookCounterFour';
-import HookCounterOne from './components/HookCounterOne'
+// import HookCounterOne from './components/HookCounterOne'
+// import DataFetching from './components/DataFetching';
+// import CounterOne from './components/CounterOne';
+// import CounterTwo from './components/CounterTwo';
+//  import CounterThree from './components/CounterThree';
+// import ComponentA from './components/ComponentA'
+// import ComponentB from './components/ComponentB'
+// import ComponentC from './components/ComponentC'
+// import DataFetchingOne from './components/DataFetchingOne';
+// import DataFetchingTwo from './components/DataFetchingTwo';
+
+
+// const initialState = 0
+// const reducer = (state, action) => {
+// 	switch (action) {
+// 		case 'increment':
+// 			return state + 1
+// 		case 'decrement':
+// 			return state - 1
+// 		case 'reset':
+// 			return initialState
+// 		default:
+// 			return state
+// 	}
+// }
+
+// export const CountContext = React.createContext()
 
 function App() {
+  // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <HookCounterOne/>
+      <ParentComponent />
+      {/* <DataFetchingOne/> */}
+      {/* <DataFetchingTwo/> */}
+      {/* <CountContext.Provider
+			value={{ countState: count, countDispatch: dispatch }}
+		>
+			<div className="App">
+				<CounterOne /> 
+				 <CounterTwo /> 
+			 <CounterThree /> 
+				 {count} 
+			 <ComponentA />
+				 <ComponentB />
+				 <ComponentC />
+
+			</div>
+		</CountContext.Provider> */}
+      {/* <CounterTwo/> */}
+      {/* <CounterThree/> */}
+      {/* <CounterOne/> */}
+      {/* <DataFetching/> */}
+      {/* <HookCounterOne/> */}
       {/* <HookCounterFour/> */}
       {/* <PostList/> */}
       {/* <PostForm/> */}
